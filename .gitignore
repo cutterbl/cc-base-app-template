@@ -1,0 +1,5 @@
+/.idea
+/.build
+/.transpiled
+/bower_components
+/node_modules
