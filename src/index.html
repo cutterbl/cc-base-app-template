@@ -8,10 +8,9 @@
     <title>Bootstrap 101 Template</title>
     <meta name="fragment" content="!"/>
 
-    <!-- Bootstrap -->
-    <link href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-    <link href="../bower_components/angular-block-ui/dist/angular-block-ui.css" rel="stylesheet">
-    <link href="../bower_components/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <!-- build:css css/style.css -->
+    <link href="../.tmp/transpiled/core.css" rel="stylesheet">
+    <!-- endbuild -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,15 +19,16 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- build:js js/libraries.js -->
+    <!-- build:js js/app.js -->
     <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script type="text/javascript" src="../bower_components/angular-bootstrap/ui-bootstrap.js"></script>
     <script type="text/javascript" src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script type="text/javascript" src="../bower_components/angular-block-ui/dist/angular-block-ui.js"></script>
+
+    <script type="text/javascript" src="../.tmp/transpiled/cc-grid-test-app.js"></script>
     <!-- endbuild -->
 
-    <script type="text/javascript" src="app.js"></script>
 </head>
 <body ng-app="cc-grid-test-app">
     <ui-view />

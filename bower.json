@@ -27,6 +27,10 @@
     "font-awesome": "fontawesome#^4.5.0",
     "angular-ui-router": "^0.2.18",
     "angular-block-ui": "^0.2.2",
-    "angular-bootstrap": "^1.2.5"
+    "angular-bootstrap": "^1.2.5",
+    "lodash": "^4.7.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "bower-angular-mocks#^1.5.3"
   }
 }
