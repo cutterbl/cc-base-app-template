@@ -18,7 +18,11 @@
     "Node",
     "Express"
   ],
-  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cutterbl/cc-base-app-template.git"
+  },
+  "homepage": "https://github.com/cutterbl/cc-base-app-template",
   "private": true,
   "ignore": [
     "**/.*",

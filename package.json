@@ -18,6 +18,11 @@
     "Node",
     "Express"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cutterbl/cc-base-app-template.git"
+  },
+  "homepage": "https://github.com/cutterbl/cc-base-app-template",
   "scripts": {
     "install": "bower install",
     "start": "gulp"
