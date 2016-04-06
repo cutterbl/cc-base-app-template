@@ -20,17 +20,20 @@
     <![endif]-->
 
     <!-- build:js js/app.js -->
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
     <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script type="text/javascript" src="../bower_components/angular-bootstrap/ui-bootstrap.js"></script>
     <script type="text/javascript" src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script type="text/javascript" src="../bower_components/angular-block-ui/dist/angular-block-ui.js"></script>
 
-    <script type="text/javascript" src="../.tmp/transpiled/cc-grid-test-app.js"></script>
+    <script type="text/javascript" src="../.tmp/transpiled/test-app.js"></script>
     <!-- endbuild -->
 
 </head>
-<body ng-app="cc-grid-test-app">
-    <ui-view />
+<body ng-app="testApp">
+    <div class="container-fluid">
+        <ui-view></ui-view>
+    </div>
 </body>
 </html>

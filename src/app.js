@@ -1,17 +1,28 @@
 'use strict';
 
-angular.module('cc-grid-test-app', [
-    'ui.bootstrap',
-    'ui.router',
-    'blockUI'
-])
+angular.module('testApp', [
+        'ui.router',
+        'ui.bootstrap',
+        require('./script').name
+    ])
+    .run([
+        '$rootScope', '$state', '$stateParams',
+        function ($rootScope, $state, $stateParams) {
+            $rootScope.$state = $state;
+            $rootScope.$stateParams = $stateParams;
+        }
+    ])
     .config([
-        '$stateProvider',
-        function ($stateProvider) {
+        '$stateProvider', '$urlRouterProvider',
+        function ($stateProvider, $urlRouterProvider) {
+
+            $urlRouterProvider.otherwise('/');
+
             $stateProvider
-                .state('home', {
+                .state({
+                    name: 'home',
                     url: '/',
-                    template: '<h1>Home</h1>'
+                    templateUrl: 'partials/home.html'
                 });
         }
     ]);

@@ -9,12 +9,12 @@ var gulp = require('gulp'),
 
 module.exports = gulp.task('browserify', function () {
     return browserify({
-        entries: [cfg.paths.temp + '/transpiled/app.js'],
-        debug: true
-    })
+            entries: [cfg.paths.temp + '/transpiled/app.js'],
+            debug: true
+        })
         .transform(browserifyShim)
         .bundle()
-        .pipe(source('cc-grid-test-app.js'))
+        .pipe(source('test-app.js'))
         .pipe(buffer())
         .pipe(gulp.dest(cfg.paths.temp + '/transpiled'));
 });

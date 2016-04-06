@@ -5,5 +5,5 @@ var gulp = require('gulp'),
     runsequence = require('run-sequence');
 
 module.exports = gulp.task('main', function (callback) {
-    return runsequence('transpile', 'browserify', 'less', 'html', 'fonts', callback);
+    return runsequence('server', 'transpile', 'browserify', 'less', 'html', 'partials', 'resources', 'fonts', callback);
 });

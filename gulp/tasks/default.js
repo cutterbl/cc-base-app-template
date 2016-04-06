@@ -5,5 +5,5 @@ var gulp = require('gulp'),
     runsequence = require('run-sequence');
 
 module.exports = gulp.task('default', ['lint'], function (callback) {
-    return runsequence('main', callback);
+    return runsequence('main', 'serve', callback);
 });

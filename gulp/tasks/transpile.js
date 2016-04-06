@@ -6,10 +6,12 @@ var gulp = require('gulp'),
     annotate = require('gulp-ng-annotate'),
     merge2 = require('merge2');
 
-module.exports = gulp.task('transpile', function (callback) {
+module.exports = gulp.task('transpile', ['clean:transpiled'], function (callback) {
     return merge2 (
         gulp.src([cfg.paths.src + '/**/*.js', '!' + cfg.paths.src + '/**/*.spec.js'])
-            .pipe(babel())
+            .pipe(babel({
+                presets: ['es2015']
+            }))
             .pipe(annotate({
                 remove: true,
                 add: true,

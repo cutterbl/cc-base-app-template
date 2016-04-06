@@ -31,7 +31,9 @@ var _ = require('lodash'),
         ],
 
         exclude: [
-
+            'src/server.js',
+            'src/app.js',
+            'src/**/index.js'
         ],
 
         reporters: ['dots'],

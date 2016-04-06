@@ -1,25 +1,29 @@
 {
-  "name": "cc-grid",
-  "description": "An AngularJS based data grid, based upon directive conventions.",
-  "main": "index.js",
-  "authors": [
-    "Stephen 'Cutter' Blades"
+  "name": "cc-base-app-template",
+  "description": "A base application template for an AngularJS single page application, with gulp build tasks and test",
+  "main": [
+    "src/app.js",
+    "src/less/core.less"
   ],
-  "license": "ISC",
+  "moduleType": "es6",
+  "authors": [
+    "Stephen 'Cutter' Blades (http://cutterscrossing.com)"
+  ],
+  "license": "Apache-2.0",
   "keywords": [
     "AngularJS",
-    "Data",
-    "Grid"
+    "UI-Router",
+    "Bootstrap",
+    "Angular-UI",
+    "Node",
+    "Express"
   ],
-  "moduleType": [],
   "homepage": "",
   "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "bower_components"
   ],
   "dependencies": {
     "angular": "angularjs#^1.5.3",
