@@ -19,8 +19,8 @@ When built, final code resides in the 'dist' directory.
 - Download the template via the [zip file download](https://github.com/cutterbl/cc-base-app-template/archive/master.zip)
 - At a command line prompt, run 'bower install'
 - At a command line prompt, run 'npm install' (use sudo if necessary)
-- At a command line prompt, run 'gulp'
+- At a command line prompt, run 'npm start' (use sudo if necessary)
 
-The 'gulp' command will run the default task, building the project from source and starting a local node server on port 8080.
+The 'npm start' command will run the default 'gulp' task, building the project from source and starting a local node server on port 8080.
 
 Running 'gulp test' will run jasmine tests located in the 'src' directory.
